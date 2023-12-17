@@ -17,16 +17,6 @@ from traffic_simulation import *
 # )
 
 def setup_initial_events(vehicles, intersections, future_event_list, lambda_rate_south_north, lambda_rate_east_west,Timelimit):
-    """
-    Sets up initial events for the simulation.
-
-    Args:
-        vehicles (list): List of Vehicle objects.
-        intersections (list): List of Intersection objects.
-        future_event_list (FutureEventList): The future event list to schedule events.
-        lambda_rate_south_north (float): Arrival rate for south-north direction.
-        lambda_rate_east_west (float): Arrival rate for east-west direction.
-    """
     for vehicle in vehicles:
         entry_time = vehicle.entry_time
         entry_intersection = vehicle.entry_intersection
